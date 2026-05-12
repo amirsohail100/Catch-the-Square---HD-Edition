@@ -1,0 +1,98 @@
+:root {
+    --primary-bg: #0f172a;
+    --square-color: #38bdf8;
+    --accent-color: #f472b6;
+    --text-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: radial-gradient(circle, #1e293b 0%, #0f172a 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    overflow: hidden;
+    touch-action: none;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+    font-size: 2rem;
+}
+
+#game-info {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* The Game Area */
+#game-container {
+    position: relative;
+    width: 90vw;
+    max-width: 600px;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--square-color);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+/* The Target Square */
+#target {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--square-color), var(--accent-color));
+    border-radius: 12px;
+    box-shadow: 0 0 15px var(--square-color);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+#target:active {
+    transform: scale(0.8);
+}
+
+/* Start Button */
+#start-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    background: var(--square-color);
+    color: var(--primary-bg);
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#start-btn:hover {
+    background: var(--accent-color);
+    box-shadow: 0 0 15px var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* Message Box */
+#message {
+    position: fixed;
+    top: 20px;
+    background: #22c55e;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: none;
+}
+/* CSS for HD Look and Feel */
