@@ -21,7 +21,7 @@ Below is the live execution interface snapshot capturing the glowing main boundi
 
 <!-- Game Core UI Display Section -->
 <div align="center">
-  <img src="./image_2f4e11.png" alt="Catch the Square Game UI Preview" width="85%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 212, 255, 0.2); border: 2px solid #00d4ff;">
+  <img src="./image.png" alt="Catch the Square Game UI Preview" width="85%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 212, 255, 0.2); border: 2px solid #00d4ff;">
   <p><i>Gameplay Interface — Core Neon Grid Layout tracking dynamic user parameters</i></p>
 </div>
 
