@@ -51,6 +51,6 @@ Follow these basic guidelines to spin up the arcade environment smoothly on your
 ### 1. Clone the Target Endpoint
 
 ```bash
-git clone [https://github.com/amirsohail100/your-game-repo-name.git](https://github.com/amirsohail100/your-game-repo-name.git)
-cd your-game-repo-name
+git clone [https://github.com/amirsohail100/Catch-the-Square---HD-Edition.git](https://github.com/amirsohail100/Catch-the-Square---HD-Edition.git)
+cd Catch-the-Square---HD-Edition
 ```
