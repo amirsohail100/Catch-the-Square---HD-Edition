@@ -1,4 +1,3 @@
-// JavaScript Logic
 const target = document.getElementById('target');
 const container = document.getElementById('game-container');
 const scoreDisplay = document.getElementById('score');
@@ -12,7 +11,6 @@ let timeLeft = 30;
 let gameActive = false;
 let timerInterval;
 
-// Square ko random jagah par move karne ka function
 function moveTarget() {
     const containerWidth = container.clientWidth;
     const containerHeight = container.clientHeight;
@@ -28,7 +26,6 @@ function moveTarget() {
     target.style.top = randomY + 'px';
 }
 
-// Target click event
 target.addEventListener('mousedown', function() {
     if (!gameActive) return;
 
@@ -37,7 +34,6 @@ target.addEventListener('mousedown', function() {
     moveTarget();
 });
 
-// Touch support for mobiles
 target.addEventListener('touchstart', function(e) {
     e.preventDefault();
     if (!gameActive) return;
@@ -47,7 +43,6 @@ target.addEventListener('touchstart', function(e) {
     moveTarget();
 });
 
-// Game start function
 function startGame() {
     score = 0;
     timeLeft = 30;
@@ -69,7 +64,6 @@ function startGame() {
     }, 1000);
 }
 
-// Game end function
 function endGame() {
     gameActive = false;
     clearInterval(timerInterval);
@@ -79,10 +73,9 @@ function endGame() {
     
     finalScoreText.innerText = score;
     message.style.display = 'block';
-    message.style.background = '#ef4444'; // Red color for end
+    message.style.background = '#ef4444';
 }
 
 startBtn.addEventListener('click', startGame);
 
-// Initial setup
 target.style.display = 'none';
