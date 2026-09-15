@@ -20,7 +20,7 @@ The objective is simple yet highly engaging: players must track and click a dyna
 Below is the live execution interface snapshot capturing the glowing main bounding grid arena, structural text score layouts, and active countdown loops from the workspace:
 
 <div align="center">
-  <img src="./image1.png" alt="Catch the Square Game UI Preview" width="85%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 212, 255, 0.2); border: 2px solid #00d4ff;">
+  <img src="assets/image1.png" alt="Catch the Square Game UI Preview" width="85%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 212, 255, 0.2); border: 2px solid #00d4ff;">
   <p><i>Gameplay Interface — Core Neon Grid Layout tracking dynamic user parameters</i></p>
 </div>
 
